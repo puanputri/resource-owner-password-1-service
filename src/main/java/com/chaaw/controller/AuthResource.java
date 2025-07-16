@@ -1,8 +1,8 @@
 package com.chaaw.controller;
 
+import com.chaaw.dto.Credentials;
 import com.chaaw.dto.RefreshRequest;
 import com.chaaw.service.AuthService;
-import io.vertx.ext.auth.authentication.Credentials;
 import jakarta.inject.Inject;
 import jakarta.ws.rs.Consumes;
 import jakarta.ws.rs.POST;
@@ -10,6 +10,7 @@ import jakarta.ws.rs.Path;
 import jakarta.ws.rs.Produces;
 import jakarta.ws.rs.core.MediaType;
 import jakarta.ws.rs.core.Response;
+import org.eclipse.microprofile.jwt.JsonWebToken;
 
 @Path("/auth")
 @Produces(MediaType.APPLICATION_JSON)

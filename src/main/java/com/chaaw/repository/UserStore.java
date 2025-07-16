@@ -1,3 +1,5 @@
+package com.chaaw.repository;
+
 import com.chaaw.model.User;
 import jakarta.enterprise.context.ApplicationScoped;
 

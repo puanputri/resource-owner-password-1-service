@@ -2,12 +2,13 @@ package com.chaaw.service;
 
 
 import com.chaaw.dto.RefreshRequest;
+import com.chaaw.model.User;
 import com.chaaw.repository.UserStore;
-import io.quarkus.security.User;
 import com.chaaw.dto.Credentials;
 import jakarta.enterprise.context.ApplicationScoped;
 import jakarta.inject.Inject;
 import io.smallrye.jwt.build.Jwt;
+import org.eclipse.microprofile.jwt.JsonWebToken;
 
 
 import java.time.Instant;
